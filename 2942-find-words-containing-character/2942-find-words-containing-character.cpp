@@ -3,15 +3,16 @@ public:
     vector<int> findWordsContaining(vector<string>& words, char x) {
         vector<int>res;
         for(int i = 0; i < words.size(); i++) {
-            bool flag = false;
+            // bool flag = false;
             for(int j = 0; j < words[i].size(); j++) {
                 if(words[i][j] == x) {
-                    flag = true;
+                    res.push_back(i);
+                    break;
                 }
             }
-            if(flag) {
-                res.push_back(i);
-            }
+            // if(flag) {
+            //     res.push_back(i);
+            // }
         }
         return res;
     }
