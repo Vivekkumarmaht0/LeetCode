@@ -3,7 +3,7 @@ public:
     static bool order(pair<int, int>&a, pair<int, int>&b) {
         return a.second > b.second;
     }
-    void sortt(map<int, int>&freq, vector<int>&res, int k) {
+    void sortt(unordered_map<int, int>&freq, vector<int>&res, int k) {
         vector<pair<int, int>>ans(freq.begin(), freq.end());
         sort(ans.begin(), ans.end(), order);
 
@@ -13,7 +13,7 @@ public:
 
     }
     vector<int> topKFrequent(vector<int>& nums, int k) {
-        map<int, int>freq;
+        unordered_map<int, int>freq;
         vector<int>res;
         for(int i: nums) {
             freq[i]++;
