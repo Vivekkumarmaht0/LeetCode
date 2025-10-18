@@ -7,7 +7,7 @@ public:
         }
         int ans = 0;
         for(auto &p: freq) {
-            if(p.second > 0 && p.second < 2) {
+            if(p.second == 1) {
                 ans = p.first;
                 break;
             }
