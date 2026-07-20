@@ -12,7 +12,7 @@ public:
             } else if(!isVowel(s[right])) {
                 right--;
             } else {
-                char temp = s[left];
+                int temp = s[left];
                 s[left] = s[right];
                 s[right] = temp;
                 left++;
