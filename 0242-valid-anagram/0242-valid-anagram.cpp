@@ -9,14 +9,17 @@ public:
         }
 
         for(auto i: t) {
+            if(freq[i] == 0) {
+                return false;
+            }
             freq[i]--;
         }
 
-        for(auto x: freq) {
-            if(x.second != 0) {
-                return false;
-            }
-        }
+        // for(auto x: freq) {
+        //     if(x.second != 0) {
+        //         return false;
+        //     }
+        // }
         return true;
     }
 };
