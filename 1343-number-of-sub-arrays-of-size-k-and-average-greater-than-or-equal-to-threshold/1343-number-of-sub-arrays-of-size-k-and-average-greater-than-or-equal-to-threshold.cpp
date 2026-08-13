@@ -1,7 +1,7 @@
 class Solution {
 public:
     int numOfSubarrays(vector<int>& arr, int k, int threshold) {
-        int avgSum = INT_MIN;
+        int avgSum = 0;
         int windowSum = 0;
         int count = 0;
         for(int i = 0; i < arr.size(); i++) {
